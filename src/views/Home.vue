@@ -32,3 +32,19 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.home {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 200px;
+}
+
+.destinations {
+  display: flex;
+  justify-content: space-between;
+}
+</style>
