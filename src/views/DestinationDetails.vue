@@ -18,7 +18,6 @@ export default {
   },
   computed: {
     destination() {
-      console.log(store.destinations);
       return store.destinations.find(
         (destination) => destination.id === this.destinationId
       );
