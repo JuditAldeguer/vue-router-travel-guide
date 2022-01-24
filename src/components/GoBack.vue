@@ -16,6 +16,8 @@ export default {
 
 <style scoped>
 .go-back{
+  margin-top: 2rem;
+  transform: translateY(20px);
     display: flex;
     cursor: pointer;
 }
