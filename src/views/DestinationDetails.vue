@@ -1,6 +1,6 @@
 <template>
   <div>
-    <GoBack/>
+    <GoBack />
     <section class="destination">
       <h1>{{ destination.name }}</h1>
       <div class="destination-details">
@@ -13,7 +13,7 @@
     </section>
     <section class="experiences">
       <h2>Top experiences in {{ destination.name }}</h2>
-      <div class="cards">
+      <div class="cards" id="experience">
         <div
           class="card"
           v-for="experience in destination.experiences"
@@ -23,6 +23,7 @@
             :to="{
               name: 'experienceDetails',
               params: { experienceSlug: experience.slug },
+              hash: '#experience',
             }"
           >
             <img
@@ -44,8 +45,8 @@
 import store from "@/store.js";
 import GoBack from "@/components/GoBack.vue";
 export default {
-  components:{
-    GoBack
+  components: {
+    GoBack,
   },
   data() {
     return {};
@@ -67,6 +68,9 @@ export default {
 </script>
 
 <style scoped>
+h1{
+  margin-top: 0px;
+}
 img {
   max-width: 600px;
   height: auto;
@@ -85,8 +89,8 @@ p {
   text-align: justify;
 }
 
-.experiences{
-    padding-top: 2rem;
+.experiences {
+  padding-top: 2rem;
 }
 .cards {
   display: flex;
