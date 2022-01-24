@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <TheNavigation></TheNavigation>
-    <router-view />
+    <TheNavigation />
+    <router-view :key="$route.path" />
   </div>
 </template>
 
@@ -22,5 +22,4 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
 </style>
