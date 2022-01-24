@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "Home",
+      name: "home",
       component: Home,
       props: true,
     },
@@ -33,6 +33,14 @@ export default new Router({
             ),
         },
       ],
+    },
+    {
+      path: "*",
+      name: "notFound",
+      component: () =>
+        import(
+          /* webpackChunkName: "notFound" */ "../views/NotFound.vue"
+        ),
     },
   ],
 });
