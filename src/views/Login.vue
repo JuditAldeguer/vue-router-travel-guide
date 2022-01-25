@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     login() {
-      // authenticate agains API
+      // simulates authenticate agains API
       store.user = this.username;
       this.$router.push("/user");
     },
