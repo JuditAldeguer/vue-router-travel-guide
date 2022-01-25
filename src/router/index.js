@@ -86,8 +86,9 @@ const router = new Router({
   ],
 });
 
+// Global Navigation Guards-------------
 router.beforeEach((to, from, next) => {
-  // if (to.meta.requiresAuth) {
+  // if (to.meta.requiresAuth) { ---this url contains this propety | below: some of the parts of the url cotains this propety
   if (to.matched.some((record) => record.meta.requiresAuth)) {
     if (!store.user) {
       next({
