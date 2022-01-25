@@ -77,6 +77,13 @@ const router = new Router({
         import(/* webpackChunkName: "Login" */ "../views/Login.vue"),
     },
     {
+      path: "/invoices",
+      name: "invoices",
+      component: () =>
+        import(/* webpackChunkName: "invoices" */ "../views/Invoices.vue"),
+      meta: { requiresAuth: true },
+    },
+    {
       path: "/404",
       alias: "*",
       name: "notFound",
@@ -93,6 +100,7 @@ router.beforeEach((to, from, next) => {
     if (!store.user) {
       next({
         name: "login",
+        quer: { redirect: to.fullPath },
       });
     } else {
       next();
