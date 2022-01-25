@@ -15,16 +15,16 @@ export default {
 </script>
 
 <style scoped>
-.go-back{
+.go-back {
   margin-top: 2rem;
   transform: translateY(20px);
-    display: flex;
-    cursor: pointer;
+  display: flex;
+  cursor: pointer;
 }
-button{
-    border: 0;
-    background-color: rgb(187, 52, 187);
-    color: white;
-    font-weight: bolder;
+button {
+  border: 0;
+  background-color: rgb(187, 52, 187);
+  color: white;
+  font-weight: bolder;
 }
 </style>

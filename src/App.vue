@@ -76,13 +76,13 @@ export default {
   opacity: 0;
 }
 
-.input{
+.input {
   border: 1px solid green;
   padding: 10px;
   margin-bottom: 20px;
 }
 
-.btn{
+.btn {
   background-color: green;
   color: white;
   padding: 10px;

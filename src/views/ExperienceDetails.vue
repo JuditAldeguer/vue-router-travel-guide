@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-section{
+section {
   padding-top: 2rem;
 }
 img {

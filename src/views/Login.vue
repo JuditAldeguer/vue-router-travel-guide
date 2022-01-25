@@ -23,17 +23,17 @@ export default {
     login() {
       // authenticate agains API
       store.user = this.username;
-      this.$router.push("/user")
+      this.$router.push("/user");
     },
   },
 };
 </script>
 
 <style scoped>
-.form{
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
 }
 </style>

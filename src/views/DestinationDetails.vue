@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-h1{
+h1 {
   margin-top: 0px;
 }
 img {
